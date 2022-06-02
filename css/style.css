@@ -1,0 +1,111 @@
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   background: #000515;
+   color: #fff;
+   align-items: center;
+}
+
+.header_logo {
+   width: fit-content;
+   display: flex;
+   align-items: center;
+}
+.header_logo-img {
+   width: 100px;
+   height: 44px;
+}
+.header_logo-descriptions {
+   margin-left: 4%;
+   font-size: 14px;
+   width: 40%;
+}
+.arrow_down {
+}
+.conteiner {
+   padding: 60px 16.14% 0 ;
+}
+
+.banner {
+   background: #000515;
+
+}
+.nav-list{
+   display: flex;
+   align-items: center;
+   white-space: nowrap;
+
+}
+
+.nav-list__item{
+   font-size: 18px;
+   margin-right: 5.8%;
+}
+
+.nav-list__item:last-child{
+   margin: 0;
+}
+
+
+.main_burger {
+}
+.main_text {
+}
+.soc-networks-list {
+}
+.soc-networks-list_item {
+}
+.showreel {
+}
+.showreel__text {
+}
+.me_doing {
+}
+.me_doing__text {
+}
+.achievements__conteiner {
+}
+.achievements {
+}
+.achievements__header {
+}
+.achievements__text {
+}
+.prizes-list {
+}
+.prizes-list__item {
+}
+.prizes-list__item__header {
+}
+.prizes-list__item__text {
+}
+.partners {
+}
+.partners__text {
+}
+.partners__text-header {
+}
+.partners__text-descriptions {
+}
+.js-partners__text {
+}
+.partners__logos-list {
+}
+.partners__logos-list__item {
+}
+.services {
+}
+.services__names-list {
+}
+.services__names-list-item {
+}
+.services__submenu {
+}
+.services__submenu-item {
+}
