@@ -5,39 +5,53 @@
 }
 
 .header {
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template: 1fr/ 1fr 2fr;
    background: #000515;
    color: #fff;
+   font-family: "Girloy Medium";
+   padding-top: 60px !important;
    align-items: center;
 }
 
 .header_logo {
-   width: fit-content;
-   display: flex;
+   display: grid;
+   grid-auto-flow: column;
    align-items: center;
+   width: fit-content;
 }
 .header_logo-img {
-   width: 100px;
+   width: 88px;
    height: 44px;
+}
+.header_logo-img img{
+   width: 100%;
 }
 .header_logo-descriptions {
    margin-left: 4%;
    font-size: 14px;
-   width: 40%;
+   white-space: nowrap;
 }
 .arrow_down {
 }
 .conteiner {
-   padding: 60px 16.14% 0 ;
+   padding:  0 16.14% ;
 }
 
 .banner {
    background: #000515;
-
+   padding-top: 210px;
 }
+
+.banner_goriz{
+   display: flex;
+   justify-content: space-between;
+}
+
+
 .nav-list{
    display: flex;
+   justify-content: space-between;
    align-items: center;
    white-space: nowrap;
 
@@ -45,67 +59,404 @@
 
 .nav-list__item{
    font-size: 18px;
-   margin-right: 5.8%;
 }
 
 .nav-list__item:last-child{
    margin: 0;
 }
 
+main{
+   background: #000515;
+}
 
-.main_burger {
-}
+.main_burger{
+   position: relative;
+   margin: auto 0;
+   width: 40px;
+   height: 25px;
+   cursor: pointer;
+ }
+ .main_burger span, .main_burger span:before, .main_burger span:after{
+   width: 80%;
+   position: absolute;
+   height: 3px;
+   background: #fff;
+   display: block;
+   transition: .3s;
+   border-radius: 3px;
+ }
+ .main_burger span:before{
+   content: "";
+   width: 40px;
+   top: -10px;
+   transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+ }
+ .main_burger span{
+   top: 10px;
+ }
+ .main_burger span:after{
+   content: "";
+   width: 40px;
+   bottom: -10px;
+   transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+ }
+
 .main_text {
+   color: #fff;
+   width: 42vw ;
 }
+
+.main_text p{
+   font-size: 36px;
+   font-family: "Girloy Medium";
+}
+
+.main_text .main_text-header{
+   font-family: "Cera Pro Bold";
+   font-size: 72px;
+   line-height: 1.25em;
+   
+}
+
 .soc-networks-list {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 .soc-networks-list_item {
+   
 }
 .showreel {
+   margin: 130px 0 0 0  ;
+   padding: 0 0 5px  0;
+   text-align: center;
 }
+
+.showreel img{
+   width: 83px;
+   height: 83px;
+}
+
 .showreel__text {
+   font-family: "Girloy Medium";
+   color: #fff;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+   
 }
 .me_doing {
+   height: 100vh;
+   background: #DDDDDD;
+   display: grid;
+   
 }
 .me_doing__text {
+   font-family: "Cera Pro Bold";
+   color:#1D1D1D ;
+   font-size: 36px;
+   margin: auto;
+   max-width: 643px;
 }
+
+.achievements_prices{
+   display: grid;
+   grid-template: 1fr / 3fr 1fr;
+   grid-gap: 11%;
+   
+   height: 703px;
+   color: #fff;
+   background: #000515;
+}
+
 .achievements__conteiner {
+   display:grid;
+   grid-gap: 70px;
+   margin: auto 0;
 }
 .achievements {
 }
 .achievements__header {
+   font-family: "Cera Pro Bold";
+   font-size: 36px;
+   margin:  0 0 20px 0;
 }
+
 .achievements__text {
+   border-left: 3px solid #fff;
+   border-radius: 1px;
+   font-size: 18px;
+   font-family: "Girloy Medium";
+   padding:  0 0 0 23px;
 }
+
 .prizes-list {
+   display: grid;
+   grid-gap: 75px;
+   margin: auto 0;
 }
 .prizes-list__item {
 }
 .prizes-list__item__header {
+   font-family: "Girloy Bold";
+   color: #00A7D1;
+   font-size: 24px;
+   margin: 0 0 9px 0;
 }
 .prizes-list__item__text {
+   font-family: "Girloy Medium";
 }
 .partners {
+   padding-top: 150px;
+   padding-bottom:47px;
+   display: grid;
+   grid-template: 1fr/ 2fr 1fr;
+   grid-gap: 7.13%;
+   background: #DDDDDD;
+
 }
 .partners__text {
+   font-family: "Girloy Medium";
+   color: #1D1D1D;
 }
 .partners__text-header {
+   font-family: "Cera Pro Bold";
+   font-size: 48px;
+   margin-bottom: 20px;
 }
 .partners__text-descriptions {
+   font-size: 24px;
+   margin-bottom: 110px;
 }
 .js-partners__text {
+   width: fit-content;
+   font-size: 18px;
+   padding: 0 0 10px 0;
+   border-bottom: 2px solid #00A7D1;
 }
 .partners__logos-list {
+   display: grid;
+   grid-template:repeat(6, 1fr)/repeat(3, 1fr);
+   grid-gap: 70px;
 }
 .partners__logos-list__item {
+   font-size: 18px;
+   background: #C4C4C4;
+   width: 200px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
 }
 .services {
+   background: #000515;
+   padding-top:65px;
+   padding-bottom: 65px;
+   color: #fff;
+   display: flex;
 }
 .services__names-list {
+   margin: auto 2vw auto 0;
 }
 .services__names-list-item {
+   font-family: "Cera Pro Bold";
+   font-size: 48px;
 }
+
+.services__names-list-item.active{
+   color: #00A7D1;
+}
+
 .services__submenu {
+   display: grid;
+   grid-template: repeat(6, 1fr)/ repeat(2, 1fr);
+   grid-row-gap: 30px;
+   font-family: "Girloy Bold";
+   font-size: 24px;
+   width: 60.3vw;
+   background: #DDDDDD;
+   color: #1D1D1D;
+   padding: 215px 0 215px 47px;
+}  
+/* .services__submenu-item {
+
+} */
+
+.white_block{
+   height: 100px;
+   background: #fff ;
 }
-.services__submenu-item {
+
+.submit_request {
+   color: #fff;
+   
 }
+
+.submit_request_grey{
+   background: #DDDDDD;
+   color: #1D1D1D;
+}
+
+.submit_request-text {
+   padding-top: 5.989vw;
+   padding-bottom: 5.729vw;
+}
+
+.submit_request-text h1{
+   
+   font-family: "Cera Pro Bold";
+   font-size: 48px;
+   line-height: 1.45em;
+   margin-bottom: 25px;
+}
+
+.submit_request-text h2{
+   font-family: "Girloy Bold";
+}
+.submit_request-button {
+   padding-top: 4.7vw;
+   padding-bottom: 4.7vw;
+   align-items: center;
+   background: #00A7D1;
+   
+}
+
+.submit_request-button span{
+   font-family: "Girloy Medium";
+   font-size: 48px;
+   line-height: 1.1875em;
+   color: #fff;
+}
+
+.submit_request-button-arrow {
+   position: relative;
+   cursor: pointer;
+   width: 90px;
+   height: 27px;
+   margin-left: 65px;
+}
+
+.cases_conteiner {
+   height: 48.95vw;
+   overflow: hidden;
+   font-family: "Girloy Bold";
+}
+
+.cases{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.cases__header {
+   font-size: 40px;
+   padding: 5.989vw 0 4.6875vw 0;
+}
+
+.cases__list {
+   font-size: 40px;
+   margin-right: 2.5vw;
+}
+.cases_list-item {
+   margin-bottom: 1.66vw;
+}
+
+.cases_list-item:last-child{
+   margin: 0;
+}
+/* .cases__images-list {
+} */
+.cases__images-list-item {
+   position: relative;
+}
+.cases_list-item.active{
+   color: #00A7D1;
+   height: fit-content;
+   width: fit-content;
+   position: relative;
+}
+.cases_list-item.active::before{
+   position: absolute;
+   right: 130%;
+   top: 50%;
+   content: "";
+   height: 2px;
+   width: 73%;
+   background: #00A7D1;
+}
+
+.cases__images-list-item{
+   margin-bottom: 1.66vw;
+}
+
+.cases__images-list-item img{
+   width: 39.0625vw;
+   height: 22.29vw;
+}
+
+.case__description {
+   position: absolute;
+   z-index: 1000;
+   bottom: 6.07%;
+   left: 1.8%;
+}
+
+.case__description h1{
+   font-family: "Girloy Bold";
+}
+.case__description span{
+   font-family: "Girloy Medium";
+   font-size: 18px;
+}
+
+footer{
+   color: #FFFFFF;
+   background: #000515;
+   
+}
+.footer__form {
+   padding-top: 10.83vw ;
+   font-family: "Girloy Medium";
+   font-size: 18px;
+}
+.footer__form-text {
+   margin: 0 0 6.25vw 0;
+   max-width: 420px;
+   
+}
+.footer__form-inputs{
+   display: grid;
+   grid-template: 1fr 1fr/ 1fr 1fr;
+   grid-row-gap: 6.77vw;
+   justify-content: space-between;
+}
+
+.footer__form-input{
+   color: #FFFFFF;
+   font-family: "Girloy Medium";
+   font-size: 18px;
+   background: #000515;
+   width: 27.604vw;
+   border: none;
+   outline: none;
+   padding-bottom: 14px ;
+   border-bottom: 1px solid #FFFFFF; 
+}
+
+.footer__form-input::-webkit-input-placeholder { color: #FFF; }
+
+.footer_form-request {
+   outline: none;
+   border: none;
+   background: none;
+   color: #fff;
+   font-family: "Girloy Medium";
+   font-size: 18px;
+   width: fit-content;
+   border-bottom: 2px solid #00A7D1;
+   padding-bottom: 1.4%;
+   margin: 3.6vw 0 0 75%;
+}  
+
+
+

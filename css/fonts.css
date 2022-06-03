@@ -1,0 +1,19 @@
+@font-face {
+   font-family: "Girloy Medium";
+   src: url("../fonts/girloy/gilroy-medium.ttf");
+}
+
+@font-face {
+   font-family: "Girloy Bold";
+   src: url("../fonts/girloy/gilroy-bold.ttf");
+}
+
+@font-face {
+   font-family: "Cera Pro Bold";
+   src: url("../fonts/cera_pro/Cera-Pro-Bold.otf ");
+}
+
+@font-face {
+   font-family: "Cera Pro Medium";
+   src: url("../fonts/cera_pro/Cera-Pro-Medium.otf ");
+}
